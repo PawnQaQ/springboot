@@ -13,6 +13,6 @@ public class InterceptorConfig extends WebMvcConfigurationSupport {
     protected void addInterceptors(InterceptorRegistry registry) {
             registry.addInterceptor(new MyInterceptor()).
                     addPathPatterns("/user/**").
-                    excludePathPatterns("/user/findAll");
+                    excludePathPatterns("/user/findAll","/user/save");
     }
 }
